@@ -9,3 +9,16 @@
           </u1>
     </lightning-card>
 </template>
+
+
+<template>
+     <lightning-card title= "Iteration Example" >
+           <u1 class = "slds-m-around_medium">
+             <template iterator:con ={contacts}>
+                  <li key={con.value.Index}>
+                       {contact.value.Index} , {contact.value.Id} , {contact.value.Name} , {contact.value.Email}
+                  </li>
+             </template>
+           </u1>
+     </lightning-card>
+ </template>
